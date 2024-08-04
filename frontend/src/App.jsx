@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-
+import Navbar from "./components/Navbar";
 //page components
 import Home from './pages/Home';
 import Guidance from "./pages/Guidance";
@@ -10,6 +10,7 @@ import Mentorship from "./pages/Mentorship";
 function App() {
   return (
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/guidance" element={<Guidance />} />
