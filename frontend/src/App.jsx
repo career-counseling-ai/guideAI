@@ -1,7 +1,5 @@
 import {
   createBrowserRouter,
-  createRoutesFromElements,
-  Route,
   RouterProvider
 } from "react-router-dom";
 
@@ -13,19 +11,6 @@ import Opportunities from "./pages/Opportunities";
 import RoadMaps from "./pages/RoadMaps";
 import Mentorship from "./pages/Mentorship";
 
-
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route path="/" element={<Navbar/>}>
-//       <Route path="/" element={<Home />} />
-//       <Route path="/guidance" element={<Guidance />} />
-//       <Route path="/opportunities" element={<Opportunities />} />
-//       <Route path="/roadmaps" element={<RoadMaps />} />
-//       <Route path="/mentorship" element={<Mentorship />} />
-//     </Route>
-//   )
-// )
-
 const router = createBrowserRouter([
   {
     path:'/',
@@ -33,8 +18,8 @@ const router = createBrowserRouter([
     children:[
       {path:'/',element:<Home/>},
       {path:'/guidance',element:<Guidance/>},
-      {path:'/opportunities',element:<Opportunities/>},
-      {path:'/roadmaps',element:<RoadMaps/>},
+      {path:'/explore/opportunities',element:<Opportunities/>},
+      {path:'/explore/roadmaps',element:<RoadMaps/>},
       {path:'/mentorship',element:<Mentorship/>},
     ]
   }
