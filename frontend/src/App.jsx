@@ -11,6 +11,10 @@ import Opportunities from "./pages/Opportunities";
 import RoadMaps from "./pages/RoadMaps";
 import Mentorship from "./pages/Mentorship";
 
+//roadmaps
+import ReactMap from "./components/Roadmaps/ReactMap";
+import JavaScriptMap from "./components/Roadmaps/JavaScriptMap"
+
 const router = createBrowserRouter([
   {
     path:'/',
@@ -22,12 +26,22 @@ const router = createBrowserRouter([
       {path:'/explore/roadmaps',element:<RoadMaps/>},
       {path:'/mentorship',element:<Mentorship/>},
     ]
+  },
+  {
+    path: "/explore/roadmaps/react",
+    element: <ReactMap />
+  },
+  {
+    path: "/explore/roadmaps/javascript",
+    element: <JavaScriptMap />
   }
 ]);
 
 function App() {
   return (
-    <RouterProvider router={router}/>
+    <div className="h-screen w-full">
+      <RouterProvider router={router}/>
+    </div>
   )
 }
 
