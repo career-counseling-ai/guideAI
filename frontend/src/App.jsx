@@ -1,34 +1,79 @@
-import {
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Navbar from "./components/Navbar";
-//page components
-import Home from './pages/Home';
-import Guidance from "./pages/Guidance";
-import Opportunities from "./pages/Opportunities";
-import RoadMaps from "./pages/RoadMaps";
-import Mentorship from "./pages/Mentorship";
+//page
+import {
+  Guidance,
+  Opportunities,
+  Mentorship,
+  Error,
+  SinglePageError,
+} from './pages/index';
+
+//Component
+
+import HomeLayout from './pages/HomeLayout';
+import Hero from './components/Hero';
+import SuccessStory from './components/SuccessStory';
+import Testimonials from './components/Testimonials';
+import RoadMaps from './components/RoadMaps';
+import AiGuidance from './components/AiGuidance';
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element:<Navbar/>,
-    children:[
-      {path:'/',element:<Home/>},
-      {path:'/guidance',element:<Guidance/>},
-      {path:'/explore/opportunities',element:<Opportunities/>},
-      {path:'/explore/roadmaps',element:<RoadMaps/>},
-      {path:'/mentorship',element:<Mentorship/>},
-    ]
-  }
+    path: '/',
+    element: <HomeLayout />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: 'hero',
+        errorElement: <SinglePageError />,
+        element: (
+          <>
+            <Hero />
+            <RoadMaps />
+            <AiGuidance />
+            <SuccessStory />
+            <Testimonials />
+          </>
+        ),
+      },
+
+      {
+        path: 'guidance',
+        errorElement: <SinglePageError />,
+        element: <Guidance />,
+      },
+
+      {
+        path: 'explore/opportunities',
+        errorElement: <SinglePageError />,
+        element: <Opportunities />,
+      },
+
+      {
+        path: 'explore/roadmaps',
+        errorElement: <SinglePageError />,
+        element: <RoadMaps />,
+      },
+      {
+        path: 'mentorship',
+        errorElement: <SinglePageError />,
+        element: <Mentorship />,
+      },
+    ],
+  },
 ]);
 
 function App() {
-  return (
-    <RouterProvider router={router}/>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
+
+//  children: [
+//       { path: '/', element: <Home /> },
+//       { path: '/guidance', element: <Guidance /> },
+//       { path: '/explore/opportunities', element: <Opportunities /> },
+//       { path: '/explore/roadmaps', element: <RoadMaps /> },
+//       { path: '/mentorship', element: <Mentorship /> },
+//     ],
