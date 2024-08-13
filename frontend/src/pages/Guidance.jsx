@@ -1,5 +1,3 @@
 export default function Guidance() {
-  return (
-    <div>Guidance</div>
-  )
+  return <div>Guidance</div>;
 }

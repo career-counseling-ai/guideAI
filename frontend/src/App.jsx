@@ -16,7 +16,9 @@ import Hero from './components/Hero';
 import SuccessStory from './components/SuccessStory';
 import Testimonials from './components/Testimonials';
 import RoadMaps from './components/RoadMaps';
-import AiGuidance from './components/AiGuidance';
+import AiGuidanceForm, { AiForm } from './components/AiGuidanceForm';
+
+//Loader
 
 const router = createBrowserRouter([
   {
@@ -25,13 +27,13 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        index: 'hero',
+        index: true,
         errorElement: <SinglePageError />,
         element: (
           <>
             <Hero />
             <RoadMaps />
-            <AiGuidance />
+            <AiGuidanceForm />
             <SuccessStory />
             <Testimonials />
           </>
@@ -41,7 +43,8 @@ const router = createBrowserRouter([
       {
         path: 'guidance',
         errorElement: <SinglePageError />,
-        element: <Guidance />,
+        element: <AiGuidanceForm />,
+        action: AiForm,
       },
 
       {
@@ -69,11 +72,3 @@ function App() {
 }
 
 export default App;
-
-//  children: [
-//       { path: '/', element: <Home /> },
-//       { path: '/guidance', element: <Guidance /> },
-//       { path: '/explore/opportunities', element: <Opportunities /> },
-//       { path: '/explore/roadmaps', element: <RoadMaps /> },
-//       { path: '/mentorship', element: <Mentorship /> },
-//     ],
