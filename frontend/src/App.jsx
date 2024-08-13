@@ -18,6 +18,10 @@ import Testimonials from './components/Testimonials';
 import RoadMaps from './components/RoadMaps';
 import AiGuidance from './components/AiGuidance';
 
+//roadmaps
+import ReactMap from "./components/Roadmaps/ReactMap";
+import JavaScriptMap from "./components/Roadmaps/JavaScriptMap"
+
 const router = createBrowserRouter([
   {
     path: '/',
