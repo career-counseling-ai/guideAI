@@ -9,6 +9,10 @@ export default function Explore() {
         setIsOpen(!isOpen);
     };
 
+    const closeDropdown = () =>{
+        setIsOpen(false);
+    }
+
   return (
     <div>
         <button onClick={handleDropdown} className='flex items-center'>
@@ -18,10 +22,10 @@ export default function Explore() {
             <div className='absolute mt-3 bg-white shadow-lg rounded-md z-10'>
                 <ul>
                     <li className='p-2'>
-                        <NavLink to='/explore/opportunities'>Opportunities</NavLink>
+                        <NavLink to='/explore/opportunities' onClick={closeDropdown}>Opportunities</NavLink>
                     </li>
                     <li className='p-2'>
-                        <NavLink to='/explore/roadmaps'>Road Maps</NavLink>
+                        <NavLink to='/explore/roadmaps' onClick={closeDropdown}>Road Maps</NavLink>
                     </li>
                 </ul>
             </div>
