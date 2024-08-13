@@ -20,6 +20,10 @@ import AiGuidanceForm, { AiForm } from './components/AiGuidanceForm';
 
 //Loader
 
+//roadmaps
+import ReactMap from "./components/Roadmaps/ReactMap";
+import JavaScriptMap from "./components/Roadmaps/JavaScriptMap"
+
 const router = createBrowserRouter([
   {
     path: '/',
