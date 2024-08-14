@@ -17,10 +17,12 @@ import SuccessStory from './components/SuccessStory';
 import Testimonials from './components/Testimonials';
 import RoadMaps from './components/RoadMaps';
 import AiGuidance from './components/AiGuidance';
+import PopularRoadmaps from './components/PopularRoadmaps';
+
 
 //roadmaps
-import ReactMap from "./components/Roadmaps/ReactMap";
-import JavaScriptMap from "./components/Roadmaps/JavaScriptMap"
+import JavaScriptMap from './components/Roadmaps/Maps/JavaScriptMap'
+import ReactMap from './components/Roadmaps/Maps/ReactMap'
 
 const router = createBrowserRouter([
   {
@@ -34,7 +36,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Hero />
-            <RoadMaps />
+            <PopularRoadmaps/>
             <AiGuidance />
             <SuccessStory />
             <Testimonials />
@@ -58,6 +60,17 @@ const router = createBrowserRouter([
         path: 'explore/roadmaps',
         errorElement: <SinglePageError />,
         element: <RoadMaps />,
+        children:[
+          {
+            path:'js-roadmap',
+            element:<JavaScriptMap/>
+          },
+          {
+            path:'react-roadmap',
+            element:<ReactMap/>
+          }
+
+        ]
       },
       {
         path: 'mentorship',
