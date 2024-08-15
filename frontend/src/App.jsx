@@ -23,6 +23,7 @@ import PopularRoadmaps from './components/PopularRoadmaps';
 //roadmaps
 import JavaScriptMap from './components/Roadmaps/Maps/JavaScriptMap'
 import ReactMap from './components/Roadmaps/Maps/ReactMap'
+import DummyMap from './components/Roadmaps/Maps/DummyyMap'
 
 const router = createBrowserRouter([
   {
@@ -61,6 +62,14 @@ const router = createBrowserRouter([
         errorElement: <SinglePageError />,
         element: <RoadMaps />,
         children:[
+          {
+            path:'html-roadmap',
+            element:<DummyMap/>
+          },
+          {
+            path:'css-roadmap',
+            element:<DummyMap/>
+          },
           {
             path:'js-roadmap',
             element:<JavaScriptMap/>

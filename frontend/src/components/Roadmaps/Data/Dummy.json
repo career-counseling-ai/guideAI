@@ -1,0 +1,27 @@
+{
+    "nodes": [
+      {
+        "id": "1",
+        "data": { "label": "Dummy" },
+        "position": { "x": 0, "y": 0 },
+        "type": "input"
+      },
+      {
+        "id": "2",
+        "data": { "label": "Data" },
+        "position": { "x": 0, "y": 100 }
+      },
+      {
+        "id": "3",
+        "data": { "label": "test" },
+        "position": { "x": 200, "y": 0 }
+      }
+    ],
+    "edges": [
+      { "id": "1-2", "source": "1", "target": "2", "label": "connect", "type": "step" },
+      { "id": "2-3", "source": "2", "target": "3", "label": "connect", "type": "step" }
+    ]
+  }
+  
+
+  

@@ -1,0 +1,50 @@
+{
+    "nodes": [
+      {
+        "id": "1",
+        "data": { "label": "Javascript" },
+        "position": { "x": 500, "y": 0 }
+      },
+      {
+        "id": "2",
+        "data": { "label": "Introduction to JavaScript" },
+        "position": { "x": 500, "y": 100 }
+      },
+      {
+        "id": "3",
+        "data": { "label": "All about Variables" },
+        "position": { "x": 500, "y": 200 }
+      },
+      {
+        "id": "4",
+        "data": { "label": "What is Javascript" },
+        "position": { "x": 300, "y": 180 }
+      },
+      {
+        "id": "5",
+        "data": { "label": "History of Javascript" },
+        "position": { "x": 300, "y": 230 }
+      },
+      {
+        "id": "6",
+        "data": { "label": "Javascript Versions" },
+        "position": { "x": 300, "y": 280 }
+      },
+      {
+        "id": "7",
+        "data": { "label": "How to run Javascript" },
+        "position": { "x": 300, "y": 330 }
+      }
+    ],
+    "edges": [
+      { "id": "1-2", "source": "1", "target": "2","animated":"true"},
+      { "id": "2-3", "source": "2", "target": "3","animated":"true"},
+      { "id": "2-4", "source": "2", "target": "4","animated":"true","type":"simplebezier"},
+      { "id": "4-5", "source": "4", "target": "5","animated":"true"},
+      { "id": "5-6", "source": "5", "target": "6","animated":"true"},
+      { "id": "6-7", "source": "6", "target": "7","animated":"true"}
+    ]
+  }
+  
+
+  

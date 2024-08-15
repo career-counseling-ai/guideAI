@@ -4,41 +4,19 @@ import {
   Background
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
+import JavaScriptData from '../Data/JavaScript.json'
 
-const nodes = [
-{
-  id: "1",
-  data: { label: "Javascript" },
-  position: { x: 0, y: 0 },
-  type: "input",
-},
-{
-  id: "2",
-  data: { label: "Roadmap" },
-  position: { x: 0, y: 100 },
-},
-{
-  id: "3",
-  data: { label: "test" },
-  position: { x: 200, y: 0 },
-},
-];
+function JavaScriptMap() {
 
+  const {nodes, edges} = JavaScriptData;
 
-/* Edges type can be 
+  /* Edges type can be 
 1. "default"
 2. "straight"
 3. "step"
 4. "smoothstep"
 5. "simplebezier"
 */ 
-
-const edges = [
-{ id: "1-2", source: "1", target: "2", label: "connect", type: "step" },
-{ id: "2-3", source: "2", target: "3", label: "connect", type: "step" }
-];
-
-function JavaScriptMap() {
 
 return (
   <div style={{ height: "100%" }}>
