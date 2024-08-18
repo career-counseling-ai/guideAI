@@ -8,8 +8,7 @@
             "position": {
                 "x": 0,
                 "y": 0
-            },
-            "type": "input"
+            }
         },
         {
             "id": "2",
@@ -28,6 +27,16 @@
             },
             "position": {
                 "x": 200,
+                "y": 0
+            }
+        },
+        {
+            "id": "4",
+            "data": {
+                "label": "test"
+            },
+            "position": {
+                "x": 400,
                 "y": 0
             }
         }

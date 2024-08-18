@@ -6,6 +6,8 @@ import {
 import "@xyflow/react/dist/style.css";
 import JavaScriptData from '../Data/JavaScript.json'
 
+import nodeTypes from "../NodeTypes";
+
 function JavaScriptMap() {
 
   const {nodes, edges} = JavaScriptData;
@@ -19,13 +21,14 @@ function JavaScriptMap() {
 */ 
 
 return (
-  <div style={{ height: "100%" }}>
+  <div className="h-screen w-full">
     <ReactFlow
       nodes={nodes}
       edges={edges}
       nodesDraggable={false} //can't drag nodes
       nodesConnectable={false} //can't make more edges
       elementsSelectable={true} //can make a node on focus
+      nodeTypes={nodeTypes}
       fitView
     >
       <Background color="red" gap={100} />
