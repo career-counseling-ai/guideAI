@@ -23,7 +23,7 @@ import PopularRoadmaps from './components/PopularRoadmaps';
 //roadmaps
 import JavaScriptMap from './components/Roadmaps/Maps/JavaScriptMap'
 import ReactMap from './components/Roadmaps/Maps/ReactMap'
-import DummyMap from './components/Roadmaps/Maps/DummyyMap'
+import DummyMap from './components/Roadmaps/Maps/DummyMap'
 
 const router = createBrowserRouter([
   {

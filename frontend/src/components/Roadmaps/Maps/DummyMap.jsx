@@ -1,9 +1,9 @@
 import Map from "../Map";
-import ReactData from '../Data/React.json';
+import DummyData from '../Data/Dummy.json';
 import nodeTypes from "../NodeTypes";
 
-function ReactMap() {
-  const { nodes, edges } = ReactData;
+function DummyMap() {
+  const { nodes, edges } = DummyData;
 
   return (
     <Map 
@@ -14,4 +14,4 @@ function ReactMap() {
   );
 }
 
-export default ReactMap;
+export default DummyMap;
