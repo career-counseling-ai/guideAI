@@ -12,10 +12,10 @@ import {
 //Component
 
 import HomeLayout from './pages/HomeLayout';
-import Hero from './components/Hero';
-import SuccessStory from './components/SuccessStory';
-import Testimonials from './components/Testimonials';
-import RoadMaps from './components/RoadMaps';
+import Hero from './components/Home/Hero';
+import SuccessStory from './components/Home/SuccessStory';
+import Testimonials from './components/Home/Testimonials';
+import RoadMaps from './components/Roadmaps/RoadMaps';
 import AiGuidanceForm, { AiForm } from './components/AiGuidanceForm';
 
 //Loader

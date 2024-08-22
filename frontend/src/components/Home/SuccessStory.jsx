@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import React from 'react';
 import Slider from 'react-slick';
 // import { list } from './data';
-import { stories } from '../utils/storydata';
+import { stories } from '../../utils/storydata'
 
 function SuccessStory() {
   var settings = {
