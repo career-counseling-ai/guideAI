@@ -2,7 +2,7 @@
 export default function SearchBar() {
   return (
     <div className="flex justify-center gap-4 my-10">
-        <select className="w-54 py-3 pl-4 font-semibold rounded-mdl shadow-md">
+        <select className="w-54 py-3 pl-4 font-semibold rounded-md shadow-md">
             <option value="" disabled hidden selected>Job Role</option>
             <option value="Frontend Developer">Frontend Developer</option>
             <option value="Backend Developer">Backend Developer</option>
