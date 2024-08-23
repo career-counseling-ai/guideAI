@@ -1,0 +1,222 @@
+export default [
+    {
+        "id": 1,
+        "postedOn": "2024-08-20",
+        "title": "FrontEnd Developer",
+        "company": "Amazon",
+        "type": "Full Time",
+        "experience": "Mid Level",
+        "location": "Remote",
+        "skills": ["Javascript", "React", "NextJS"],
+        "jobLink": "https://www.amazon.jobs/en/"
+    },
+    {
+        "id": 2,
+        "postedOn": "2024-08-21",
+        "title": "Backend Developer",
+        "company": "Google",
+        "type": "Part Time",
+        "experience": "Senior Level",
+        "location": "In-Office",
+        "skills": ["Python", "Django", "PostgreSQL"],
+        "jobLink": "https://careers.google.com/jobs/"
+    },
+    {
+        "id": 3,
+        "postedOn": "2024-08-22",
+        "title": "Data Scientist",
+        "company": "Microsoft",
+        "type": "Full Time",
+        "experience": "Junior Level",
+        "location": "Hybrid",
+        "skills": ["Python", "R", "Machine Learning"],
+        "jobLink": "https://careers.microsoft.com/"
+    },
+    {
+        "id": 4,
+        "postedOn": "2024-07-23",
+        "title": "DevOps Engineer",
+        "company": "Netflix",
+        "type": "Full Time",
+        "experience": "Mid Level",
+        "location": "Remote",
+        "skills": ["AWS", "Docker", "Kubernetes"],
+        "jobLink": "https://jobs.netflix.com/"
+    },
+    {
+        "id": 5,
+        "postedOn": "2024-07-24",
+        "title": "Full Stack Developer",
+        "company": "Facebook",
+        "type": "Part Time",
+        "experience": "Fresher",
+        "location": "In-Office",
+        "skills": ["Javascript", "NodeJS", "MongoDB"],
+        "jobLink": "https://www.facebook.com/careers/"
+    },
+    {
+        "id": 6,
+        "postedOn": "2024-07-25",
+        "title": "UI/UX Designer",
+        "company": "Adobe",
+        "type": "Full Time",
+        "experience": "Senior Level",
+        "location": "Hybrid",
+        "skills": ["Sketch", "Figma", "Adobe XD"],
+        "jobLink": "https://adobe.wd5.myworkdayjobs.com/en-US/Adobe_Careers"
+    },
+    {
+        "id": 7,
+        "postedOn": "2024-07-26",
+        "title": "Mobile App Developer",
+        "company": "Spotify",
+        "type": "Part Time",
+        "experience": "Junior Level",
+        "location": "Remote",
+        "skills": ["Kotlin", "Swift", "React Native"],
+        "jobLink": "https://www.spotifyjobs.com/"
+    },
+    {
+        "id": 8,
+        "postedOn": "2024-07-27",
+        "title": "Data Analyst",
+        "company": "Twitter",
+        "type": "Full Time",
+        "experience": "Mid Level",
+        "location": "In-Office",
+        "skills": ["SQL", "Excel", "Tableau"],
+        "jobLink": "https://careers.twitter.com/en.html"
+    },
+    {
+        "id": 9,
+        "postedOn": "2024-07-28",
+        "title": "Product Manager",
+        "company": "Apple",
+        "type": "Full Time",
+        "experience": "Senior Level",
+        "location": "Hybrid",
+        "skills": ["Product Roadmap", "Agile", "Scrum"],
+        "jobLink": "https://www.apple.com/careers/"
+    },
+    {
+        "id": 10,
+        "postedOn": "2024-07-29",
+        "title": "Cloud Engineer",
+        "company": "IBM",
+        "type": "Full Time",
+        "experience": "Junior Level",
+        "location": "Remote",
+        "skills": ["AWS", "Azure", "GCP"],
+        "jobLink": "https://www.ibm.com/employment/"
+    },
+    {
+        "id": 11,
+        "postedOn": "2024-07-30",
+        "title": "Security Analyst",
+        "company": "Cisco",
+        "type": "Part Time",
+        "experience": "Mid Level",
+        "location": "In-Office",
+        "skills": ["Penetration Testing", "Firewalls", "SIEM"],
+        "jobLink": "https://jobs.cisco.com/jobs/SearchJobs/"
+    },
+    {
+        "id": 12,
+        "postedOn": "2024-07-31",
+        "title": "Machine Learning Engineer",
+        "company": "Tesla",
+        "type": "Full Time",
+        "experience": "Senior Level",
+        "location": "Hybrid",
+        "skills": ["TensorFlow", "PyTorch", "Python"],
+        "jobLink": "https://www.tesla.com/careers"
+    },
+    {
+        "id": 13,
+        "postedOn": "2024-08-01",
+        "title": "Business Analyst",
+        "company": "Salesforce",
+        "type": "Full Time",
+        "experience": "Junior Level",
+        "location": "Remote",
+        "skills": ["SQL", "Salesforce", "Data Analysis"],
+        "jobLink": "https://www.salesforce.com/company/careers/"
+    },
+    {
+        "id": 14,
+        "postedOn": "2024-08-02",
+        "title": "Software Architect",
+        "company": "Oracle",
+        "type": "Full Time",
+        "experience": "Senior Level",
+        "location": "In-Office",
+        "skills": ["Java", "Microservices", "Cloud"],
+        "jobLink": "https://www.oracle.com/corporate/careers/"
+    },
+    {
+        "id": 15,
+        "postedOn": "2024-08-03",
+        "title": "Network Engineer",
+        "company": "Hewlett Packard",
+        "type": "Part Time",
+        "experience": "Mid Level",
+        "location": "Hybrid",
+        "skills": ["Networking", "Cisco", "Linux"],
+        "jobLink": "https://careers.hpe.com/"
+    },
+    {
+        "id": 16,
+        "postedOn": "2024-08-04",
+        "title": "Game Developer",
+        "company": "Electronic Arts",
+        "type": "Full Time",
+        "experience": "Fresher",
+        "location": "In-Office",
+        "skills": ["C++", "Unity", "3D Modeling"],
+        "jobLink": "https://www.ea.com/careers"
+    },
+    {
+        "id": 17,
+        "postedOn": "2024-08-05",
+        "title": "System Administrator",
+        "company": "Dell",
+        "type": "Full Time",
+        "experience": "Junior Level",
+        "location": "Remote",
+        "skills": ["Linux", "Shell Scripting", "AWS"],
+        "jobLink": "https://jobs.dell.com/"
+    },
+    {
+        "id": 18,
+        "postedOn": "2024-08-06",
+        "title": "Database Administrator",
+        "company": "SAP",
+        "type": "Full Time",
+        "experience": "Senior Level",
+        "location": "Hybrid",
+        "skills": ["SQL", "Oracle", "Database Management"],
+        "jobLink": "https://www.sap.com/about/careers.html"
+    },
+    {
+        "id": 19,
+        "postedOn": "2024-08-07",
+        "title": "Blockchain Developer",
+        "company": "IBM",
+        "type": "Part Time",
+        "experience": "Mid Level",
+        "location": "In-Office",
+        "skills": ["Ethereum", "Smart Contracts", "Solidity"],
+        "jobLink": "https://www.ibm.com/employment/"
+    },
+    {
+        "id": 20,
+        "postedOn": "2024-08-08",
+        "title": "AI Researcher",
+        "company": "OpenAI",
+        "type": "Full Time",
+        "experience": "Senior Level",
+        "location": "Remote",
+        "skills": ["Deep Learning", "NLP", "Python"],
+        "jobLink": "https://openai.com/careers"
+    }
+]
