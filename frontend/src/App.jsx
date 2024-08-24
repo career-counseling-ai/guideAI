@@ -17,12 +17,13 @@ import SuccessStory from './components/SuccessStory';
 import Testimonials from './components/Testimonials';
 import RoadMaps from './components/RoadMaps';
 import AiGuidanceForm, { AiForm } from './components/AiGuidanceForm';
+import LandingAiForm from './components/LandingAiForm';
 
 //Loader
 
 //roadmaps
-import ReactMap from "./components/Roadmaps/ReactMap";
-import JavaScriptMap from "./components/Roadmaps/JavaScriptMap"
+import ReactMap from './components/Roadmaps/ReactMap';
+import JavaScriptMap from './components/Roadmaps/JavaScriptMap';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
           <>
             <Hero />
             <RoadMaps />
-            <AiGuidanceForm />
+            <LandingAiForm />
             <SuccessStory />
             <Testimonials />
           </>
