@@ -19,7 +19,7 @@ function AiGuidanceForm() {
       </h1>
       <Form method="post" className="form" action="/guidance">
         {/* ------------------------------Personal Information------------------------ */}
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-3  gap-3">
           <div>
             <p className="text-md  "> Personal Information</p>
             {/* name */}
@@ -43,7 +43,6 @@ function AiGuidanceForm() {
                 Last name
               </label>
               <input
-                id="lastName"
                 type="text"
                 required
                 className="form-input"
@@ -54,12 +53,11 @@ function AiGuidanceForm() {
 
             {/* contact */}
             <div className="form-row mt-3">
-              <label htmlFor="email" className="form-label">
+              <label htmlFor="contact" className="form-label">
                 Contact
               </label>
 
               <input
-                id="contact"
                 type="tel"
                 required
                 pattern="[0-9]{10}"
@@ -73,51 +71,57 @@ function AiGuidanceForm() {
             </div>
           </div>
 
-          {/* -----------------------------Professional
-        Background------------------------ */}
+          {/* -----------------------------Professional Background------------------------ */}
           <div>
             <p className="text-md"> Professional Background</p>
             {/* current_job */}
 
             <div className="form-row mt-3">
-              <label htmlFor="name" className="form-label">
-                Current Job Title or Role
+              <label htmlFor="current_job" className="form-label">
+                Current/Previous Job Title
               </label>
               <input
                 type="text"
                 className="form-input"
                 name="current_job"
                 required
-                defaultValue="john"
+                defaultValue="Sr. React Developer"
               />
             </div>
 
-            {/*      Current Employer */}
+            {/* Current Company */}
             <div className="form-row mt-3">
-              <label htmlFor="lastName" className="form-label">
-                Current Employer
+              <label htmlFor="current_company" className="form-label">
+                Current Company
               </label>
               <input
-                id="lastName"
                 type="text"
                 required
                 className="form-input"
-                name="lastName"
-                defaultValue="smith"
+                name="current_company"
+                defaultValue="ABC LTD. PVT."
               />
             </div>
 
             {/*  Previous Relevant Experience */}
             <div className="form-row mt-3">
-              <label htmlFor="email" className="form-label">
-                Previous Relevant Experience
+              <label htmlFor="experience" className="form-label">
+                Relevant Experience
               </label>
               <input
-                type="text"
+                type="number"
                 required
+                pattern="[0-9]"
+                min="0"
+                onInput={(e) => {
+                  if (!e.target.validity.valid) {
+                    e.target.value = '';
+                  }
+                }}
+                maxLength="2"
                 className="form-input"
-                name="previous_job "
-                defaultValue="test@test.com"
+                name="experience"
+                defaultValue="2"
               />
             </div>
           </div>
@@ -129,7 +133,7 @@ function AiGuidanceForm() {
             {/*      Highest Degree Attained */}
 
             <div className="form-row mt-3">
-              <label htmlFor="name" className="form-label">
+              <label htmlFor="highest_degree" className="form-label">
                 Highest Degree Attained
               </label>
               <input
@@ -137,57 +141,35 @@ function AiGuidanceForm() {
                 className="form-input"
                 name="highest_degree"
                 required
-                defaultValue="john"
+                defaultValue="B.Tech"
               />
             </div>
 
-            {/* Major/Field of Study
-             */}
+            {/* Major/Field of Study*/}
             <div className="form-row mt-3">
-              <label htmlFor="lastName" className="form-label">
+              <label htmlFor="major_field" className="form-label">
                 Major/Field of Study
               </label>
               <input
-                id="lastName"
                 type="text"
                 required
                 className="form-input"
                 name="major_field"
-                defaultValue="smith"
+                defaultValue="Computer Science"
               />
             </div>
 
             {/* Institutions Attended */}
             <div className="form-row mt-3">
-              <label htmlFor="email" className="form-label">
+              <label htmlFor="institutions_attended" className="form-label">
                 Institutions Attended
               </label>
               <input
                 type="text"
                 required
                 className="form-input"
-                name="institutions-attended"
-                defaultValue="test@test.com"
-              />
-            </div>
-          </div>
-
-          {/* -----------------------------Work Experience------------------------ */}
-
-          <div>
-            <p className="text-md "> Work Experience</p>
-            {/*      Work Experience */}
-
-            <div className="form-row mt-3">
-              <label htmlFor="name" className="form-label">
-                Experience
-              </label>
-              <input
-                type="text"
-                className="form-input"
-                name="work-experience"
-                required
-                defaultValue="john"
+                name="institutions_attended"
+                defaultValue="University of Mumbai"
               />
             </div>
           </div>
@@ -199,32 +181,32 @@ function AiGuidanceForm() {
             {/*         Skills and Expertise */}
 
             <div className="form-row mt-3">
-              <label htmlFor="name" className="form-label">
+              <label htmlFor="skills_and_expertise" className="form-label">
                 Technical Skills
               </label>
               <input
                 type="text"
                 placeholder="e.g. programming languages, tools, frameworks"
-                className="form-input"
-                name="skills-and-expertise"
+                name="skills_and_expertise"
                 required
-                defaultValue="john"
+                className="form-input"
+                defaultValue="React,JavaScript"
               />
             </div>
 
             {/*     Soft Skills */}
 
             <div className="form-row mt-3">
-              <label htmlFor="name" className="form-label">
+              <label htmlFor="soft_skills" className="form-label">
                 Soft Skills
               </label>
               <input
                 type="text"
                 placeholder="e.g., communication, leadership"
                 className="form-input"
-                name="soft-skills"
+                name="soft_skills"
                 required
-                defaultValue="john"
+                defaultValue="communication"
               />
             </div>
           </div>
@@ -236,16 +218,19 @@ function AiGuidanceForm() {
             {/*      Preferred Learning Methods */}
 
             <div className="form-row mt-3">
-              <label htmlFor="name" className="form-label">
+              <label
+                htmlFor="preferred_learning_methods"
+                className="form-label"
+              >
                 Preferred Learning Methods
               </label>
               <input
                 type="text"
-                placeholder="e.g. programming languages, tools, frameworks"
+                placeholder="e.g. online courses, hands-on projects"
                 className="form-input"
-                name="preferred-learning-methods"
+                name="preferred_learning_methods"
                 required
-                defaultValue="john"
+                defaultValue="hands-on projects"
               />
             </div>
 
@@ -253,16 +238,24 @@ function AiGuidanceForm() {
              */}
 
             <div className="form-row mt-3">
-              <label htmlFor="name" className="form-label">
-                Time Commitment Available for Learning
+              <label htmlFor="time_commitment" className="form-label">
+                Time Commitment Available for Learning(months)
               </label>
               <input
-                type="text"
-                placeholder="e.g., communication, leadership"
-                className="form-input"
-                name="time-commitment"
+                type="number"
                 required
-                defaultValue="john"
+                pattern="[0-9]"
+                min="0"
+                onInput={(e) => {
+                  if (!e.target.validity.valid) {
+                    e.target.value = '';
+                  }
+                }}
+                maxLength="2"
+                placeholder="e.g. 1,4,12"
+                className="form-input"
+                name="time_commitment"
+                defaultValue="4"
               />
             </div>
           </div>
@@ -278,3 +271,29 @@ function AiGuidanceForm() {
 }
 
 export default AiGuidanceForm;
+
+/* -----------------------------Work Experience------------------------ */
+
+{
+  /* <div>
+  <p className="text-md "> Work Experience</p>
+ //// Work Experience
+  <div className="form-row mt-3">
+    <label htmlFor="experience" className="form-label">
+      Experience
+    </label>
+    <input
+      type="number"
+      required
+      onInput="validateInput()"
+      pattern="[0-9]"
+      min="0"
+      oninput="validity.valid||(value='');"
+      maxLength="2"
+      className="form-input"
+      name="experience"
+      defaultValue="2"
+    />
+  </div>
+</div>; */
+}
