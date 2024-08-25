@@ -1,9 +1,9 @@
-import RoadMapsCards from './RoadMapsCards';
-import { data } from '../utils/popularcareerdata';
+import RoadMapsCards from '../Roadmaps/RoadMapsCard'
+import { data } from '../../utils/popularcareerdata';
 
 function LandingRoadMaps() {
   return (
-    <div className=" px-40 py-20 bg-background border ">
+    <div className=" px-40 py-20 bg-background">
       <h1 className="text-[2.25rem] mt text-center">
         Discover the Most Popular Roadmaps
       </h1>
@@ -14,6 +14,7 @@ function LandingRoadMaps() {
               key={item.id}
               heading={item.heading}
               subheading={item.subheading}
+              route={item.route}
             />
           );
         })}

@@ -12,15 +12,14 @@ import {
 //Component
 
 import HomeLayout from './pages/HomeLayout';
-import Hero from './components/Hero';
-import SuccessStory from './components/SuccessStory';
-import Testimonials from './components/Testimonials';
-import RoadMaps from './components/RoadMaps';
-import AiGuidance from './components/AiGuidance';
-import LandingRoadMaps from './components/LandingRoadMaps';
+import Hero from './components/Home/Hero'
+import SuccessStory from './components/Home/SuccessStory';
+import Testimonials from './components/Home/Testimonials';
+import RoadMaps from './components/Roadmaps/RoadMaps'
+import LandingRoadMaps from './components/Home/LandingRoadMaps';
 
-import AiGuidanceForm, { AiForm } from './components/AiGuidanceForm';
-import LandingAiForm from './components/LandingAiForm';
+import AiGuidanceForm, { AiForm } from './components/AiForm/AiGuidanceForm'
+import LandingAiForm from './components/Home/LandingAiForm';
 
 //Loader
 
@@ -42,7 +41,7 @@ const router = createBrowserRouter([
           <>
             <Hero />
             <LandingRoadMaps/>
-            <AiGuidance />
+            <LandingAiForm/>
             <SuccessStory />
             <Testimonials />
           </>

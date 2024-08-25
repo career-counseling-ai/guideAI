@@ -1,5 +1,4 @@
-import React from 'react';
-import FormImg from '../assets/AiForm.svg';
+import FormImg from '../../assets/AiForm.svg'
 import { NavLink } from 'react-router-dom';
 
 function LandingAiForm() {

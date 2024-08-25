@@ -4,6 +4,7 @@ export const data = [
   {
     id: nanoid(),
     heading: 'React Developer',
+    route:'react-roadmap',
     subheading:
       'Specializes in building user interfaces using the React JavaScript library, focusing on creating interactive web applications.',
   },
