@@ -17,7 +17,7 @@ import SuccessStory from './components/SuccessStory';
 import Testimonials from './components/Testimonials';
 import RoadMaps from './components/RoadMaps';
 import AiGuidance from './components/AiGuidance';
-import PopularRoadmaps from './components/PopularRoadmaps';
+import LandingRoadMaps from './components/LandingRoadMaps';
 
 
 //roadmaps
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Hero />
-            <PopularRoadmaps/>
+            <LandingRoadMaps/>
             <AiGuidance />
             <SuccessStory />
             <Testimonials />
