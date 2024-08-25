@@ -148,7 +148,7 @@ ul {
   object-fit: cover;
 }
 /* buttons */
-
+/* 
 .btn {
   cursor: pointer;
   color: var(--white);
@@ -161,11 +161,30 @@ ul {
   transition: var(--transition);
   text-transform: capitalize;
   display: inline-block;
+} */
+
+.guidebtn {
+  cursor: pointer;
+  color: white;
+  background: #d9251a;
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
 }
+
 .btn:hover {
   background: var(--primary-700);
   box-shadow: var(--shadow-3);
 }
+.guidebtn:hover {
+  background: #aa160e;
+  box-shadow: var(--shadow-3);
+}
+
 .btn-hipster {
   color: var(--primary-500);
   background: var(--primary-200);
@@ -198,7 +217,7 @@ ul {
 
 .form {
   width: 90vw;
-  max-width: var(--fixed-width);
+
   background: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
@@ -214,7 +233,7 @@ ul {
 }
 .form-input,
 .form-textarea {
-  width: 100%;
+  width: 80%;
   padding: 0.375rem 0.75rem;
   border-radius: var(--borderRadius);
   background: var(--backgroundColor);

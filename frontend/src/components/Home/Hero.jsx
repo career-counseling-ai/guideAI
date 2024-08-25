@@ -2,7 +2,7 @@ import heroImg from '../../assets/images/hero.svg'
 
 function Hero() {
   return (
-    <div className="flex flex-row items-center px-[10rem] justify-around">
+    <div className="flex flex-row items-center px-40 justify-around">
       <div className="text-textColor">
         <h1 className="text-6xl">Feeling a bit lost? </h1>
         <h1 className="text-4xl mt-3">Seek Expert Advice</h1>
