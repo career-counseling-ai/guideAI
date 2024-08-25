@@ -344,10 +344,9 @@ ul {
 .slick-slide img {
   @apply inline-block;
 }
-.slick-prev::before {
-  @apply text-[color:var(--primary-500)];
-}
+.slick-prev::before,
 .slick-next::before {
-  @apply text-[color:var(--primary-500)];
+  @apply text-highLight;
 }
+
 /* -----------------------------Footer ============= */

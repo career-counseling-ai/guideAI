@@ -1,5 +1,5 @@
 import Logo from '../assets/images/logo.svg';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import Explore from './Explore';
 
 export default function Navbar() {

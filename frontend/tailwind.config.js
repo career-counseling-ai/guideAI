@@ -6,8 +6,9 @@ export default {
       colors: {
         background: '#eff1f4',
         textColor: '#35373B',
-        highLight: ' #D9251A',
+        highLight: '#D9251A',
         customGrey: '#F8F9FA',
+        bgCard: '#45474b',
       },
     },
   },
