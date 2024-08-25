@@ -19,6 +19,10 @@ import RoadMaps from './components/RoadMaps';
 import AiGuidance from './components/AiGuidance';
 import LandingRoadMaps from './components/LandingRoadMaps';
 
+import AiGuidanceForm, { AiForm } from './components/AiGuidanceForm';
+import LandingAiForm from './components/LandingAiForm';
+
+//Loader
 
 //roadmaps
 import JavaScriptMap from './components/Roadmaps/Maps/JavaScriptMap'
@@ -32,7 +36,7 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        index: 'hero',
+        index: true,
         errorElement: <SinglePageError />,
         element: (
           <>
@@ -48,7 +52,8 @@ const router = createBrowserRouter([
       {
         path: 'guidance',
         errorElement: <SinglePageError />,
-        element: <Guidance />,
+        element: <AiGuidanceForm />,
+        action: AiForm,
       },
 
       {
@@ -95,11 +100,3 @@ function App() {
 }
 
 export default App;
-
-//  children: [
-//       { path: '/', element: <Home /> },
-//       { path: '/guidance', element: <Guidance /> },
-//       { path: '/explore/opportunities', element: <Opportunities /> },
-//       { path: '/explore/roadmaps', element: <RoadMaps /> },
-//       { path: '/mentorship', element: <Mentorship /> },
-//     ],
