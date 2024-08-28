@@ -11,14 +11,14 @@ export default function JobCard(props) {
                 <p className='text-lg font-semibold'>{props.title} - {props.company}</p>
                 <p>{props.type} • {props.experience} • {props.location} </p>
                 <div className='flex items-center gap-2'>
-                    {props.skills.map(skill=>(
-                        <p className='text-gray-500 px-2 py-1 rounded-md border border-gray-500'>{skill}</p>)
+                    {props.skills.map((skill,index)=>(
+                        <p key={index} className='text-gray-500 px-2 py-1 rounded-md border border-gray-500'>{skill}</p>)
                     )}
                 </div>
             </div>
             <div className='flex items-center gap-4'>
                 <p className='text-gray-400'>Posted {diffInDays} Days ago</p>
-                <a href={props.jobLink} target="_blank">
+                <a href={props.jobLink} target="_blank" rel="noopener noreferrer">
                     <button className='border border-black px-8 py-2 rounded-md hover:bg-gray-500 hover:text-white'>Apply</button>
                 </a>
                 

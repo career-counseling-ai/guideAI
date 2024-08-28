@@ -219,12 +219,50 @@ export const TopLeftBottom = ({data})=>{
             <Handle
             type="source"
             position={Position.Left}
-            id="a"
             />
             <Handle
             type="source"
             position={Position.Bottom}
-            id="b"
+            />
+        </div>
+    )
+};
+
+export const TopRightBottom = ({data})=>{
+    return (
+        <div style={{ padding: '10px', border: '1px solid black', borderRadius: '4px'}}>
+            <div>{data.label}</div>
+            <Handle
+            type="target"
+            position={Position.Top}
+            />
+            <Handle
+            type="source"
+            position={Position.Right}
+            />
+            <Handle
+            type="source"
+            position={Position.Bottom}
+            />
+        </div>
+    )
+};
+
+export const LeftTopRight = ({data})=>{
+    return (
+        <div style={{ padding: '10px', border: '1px solid black', borderRadius: '4px'}}>
+            <div>{data.label}</div>
+            <Handle
+            type="target"
+            position={Position.Left}
+            />
+            <Handle
+            type="source"
+            position={Position.Top}
+            />
+            <Handle
+            type="source"
+            position={Position.Right}
             />
         </div>
     )

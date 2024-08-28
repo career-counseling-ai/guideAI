@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 //page
 import {
-  Guidance,
   Opportunities,
   Mentorship,
   Error,

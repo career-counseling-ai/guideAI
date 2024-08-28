@@ -1,60 +1,157 @@
 {
-    "nodes": [
-        {
-            "id": "1",
-            "data": {
-                "label": "React"
-            },
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        },
-        {
-            "id": "2",
-            "data": {
-                "label": "Roadmap"
-            },
-            "position": {
-                "x": 0,
-                "y": 100
-            }
-        },
-        {
-            "id": "3",
-            "data": {
-                "label": "test"
-            },
-            "position": {
-                "x": 200,
-                "y": 0
-            }
-        },
-        {
-            "id": "4",
-            "data": {
-                "label": "test"
-            },
-            "position": {
-                "x": 400,
-                "y": 0
-            }
-        }
-    ],
-    "edges": [
-        {
-            "id": "1-2",
-            "source": "1",
-            "target": "2",
-            "label": "test text",
-            "type": "smoothstep"
-        },
-        {
-            "id": "2-3",
-            "source": "2",
-            "target": "3",
-            "label": "connect",
-            "type": "simplebezier"
-        }
-    ]
+  "nodes": [
+    {
+      "id": "1",
+      "data": { "label": "CLI Tools" },
+      "position": { "x": 500, "y": 0 },
+      "type":"RightBottom"
+    },
+    {
+      "id": "2",
+      "data": { "label": "Components" },
+      "position": { "x": 500, "y": 100 },
+      "type":"LeftTopRight"
+    },
+    {
+      "id": "11",
+      "data": { "label": "Functional Components" },
+      "position": { "x": 100, "y": 100 },
+      "type":"RightBottom"
+    },
+    {
+      "id": "18",
+      "data": { "label": "JSX" },
+      "position": { "x": 150, "y": 180 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "19",
+      "data": { "label": "Props vs State" },
+      "position": { "x": 130, "y": 230 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "20",
+      "data": { "label": "Conditional Rendering" },
+      "position": { "x": 110, "y": 280 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "21",
+      "data": { "label": "Composition" },
+      "position": { "x": 130, "y": 330 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "3",
+      "data": { "label": "Vite" },
+      "position": { "x": 700, "y": 0 },
+      "type":"LeftSource"
+    },
+    {
+      "id": "4",
+      "data": { "label": "Rendering" },
+      "position": { "x": 800, "y": 100 },
+      "type":"LeftBottom"
+    },
+    {
+      "id": "5",
+      "data": { "label": "Component Lifecycle" },
+      "position": { "x": 770, "y": 150 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "6",
+      "data": { "label": "Lists and Keys" },
+      "position": { "x": 800, "y": 200 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "7",
+      "data": { "label": "Render Props" },
+      "position": { "x": 800, "y": 250 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "8",
+      "data": { "label": "Refs" },
+      "position": { "x": 830, "y": 300 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "9",
+      "data": { "label": "Events" },
+      "position": { "x": 820, "y": 350 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "10",
+      "data": { "label": "High Order Components" },
+      "position": { "x": 750, "y": 400 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "22",
+      "data": { "label": "Routers" },
+      "position": { "x": 800, "y": 530 },
+      "type":"LeftBottom"
+    },
+    {
+      "id": "23",
+      "data": { "label": "React Router" },
+      "position": { "x": 780, "y": 580 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "24",
+      "data": { "label": "Tanstack Router" },
+      "position": { "x": 770, "y": 630 },
+      "type":"TopTarget"
+    },
+    {
+      "id": "25",
+      "data": { "label": "State Management" },
+      "position": { "x": 500, "y": 650 },
+      "type":"LeftTopRight"
+    },
+    {
+      "id": "12",
+      "data": { "label": "Hooks" },
+      "position": { "x": 550, "y": 400 },
+      "type":"LeftTopRight"
+    },
+    {
+      "id": "13",
+      "data": { "label": "Creating Custom Hooks" },
+      "position": { "x": 300, "y": 390 },
+      "type":"RightTarget"
+    },
+    {
+      "id": "14",
+      "data": { "label": "Hooks Best Practices" },
+      "position": { "x": 300, "y": 440 },
+      "type":"RightTarget"
+    },
+    {
+      "id": "15",
+      "data": { "label": "useEffect" },
+      "position": { "x": 540, "y": 350 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "16",
+      "data": { "label": "useState" },
+      "position": { "x": 540, "y": 300 },
+      "type":"TopBottom"
+    },
+    {
+      "id": "17",
+      "data": { "label": "useRef" },
+      "position": { "x": 540, "y": 250 },
+      "type":"TopBottom"
+    }
+    
+  ]
 }
+
+
